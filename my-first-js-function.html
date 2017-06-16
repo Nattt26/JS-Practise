@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">	
+<script>
+			
+var exc3Text = 'Natalia świetnie programuje w JS!';
+
+function getTextInCamelCase(exc3Text){
+
+            var newSentence = ""; 
+			
+			for (i=0; i<exc3Text.length; i++) {
+				if ( i % 2 == 0) {
+				newSentence = newSentence + exc3Text[i].toLowerCase();
+				}
+				else {
+				newSentence = newSentence + exc3Text[i].toUpperCase()
+				}
+			}
+			
+			return newSentence ; 
+}
+
+console.log( getTextInCamelCase(exc3Text) ); 
+
+// powinno w efekcie dla mnie dać: "RoBeRt śWiEtNiE PrOgRaMuJe w jS!"
+</script>
+			
+<body>
+</body>
+			
+</html>
